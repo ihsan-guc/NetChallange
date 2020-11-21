@@ -1,0 +1,48 @@
+﻿@model NetChallange.Web.Models.ContactViewModel.ContactHomeViewModel
+@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@{
+    ViewBag.Title = " İletişim Listesi";
+}
+<style>
+    .pagination {
+        float: right;
+        margin-top: 5px;
+    }
+</style>
+
+<div class="card mt-3 shadow">
+    <div class="card-header">
+        <div>
+            <h4 class="float-left">
+                İletişim Liste
+            </h4>
+            <p class="float-right">
+                @Html.ActionLink(" İletişim Ekle", "Create", "Contact", null, new { @class = "btn btn-primary", title = "İletişim Ekle" })
+            </p>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div id="AddressGridContainer">
+        @await Html.PartialAsync("List", Model)
+    </div>
+</div>
+
+@Html.PagedListPager(Model.PagedList, page => Url.Action("Index", new { page = page }),
+    new X.PagedList.Mvc.Common.PagedListRenderOptions
+    {
+        DisplayItemSliceAndTotal = true,
+        ContainerDivClasses = new[] { "navigation" },
+        LiElementClasses = new[] { "page-item" },
+        PageClasses = new[] { "page-link" },
+    }
+    )
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('ul.pagination > li.disabled > a').addClass('page-link');
+            $('li.disabled > a').text('List');
+        })
+    </script>
+}

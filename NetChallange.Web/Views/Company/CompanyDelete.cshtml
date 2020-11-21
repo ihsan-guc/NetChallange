@@ -1,0 +1,55 @@
+﻿@model NetChallange.Data.Domain.Entities.Company
+@using (Html.BeginForm("DeleteConfirmed", "Company", FormMethod.Post))
+{
+
+    @Html.HiddenFor(p => p.Id)
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div style="width:100%; text-align:center">
+                                <img src="@Model.Image" class="img-thumbnail" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    Şirket Adı:
+                                    <span class="float-right">@Html.DisplayFor(m => m.Name)</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Kayıtlı İletişim:
+                                    <span class="float-right">@Html.DisplayFor(m => m.Contact.FirstName)</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Ülke:
+                                    <span class="float-right">@Html.DisplayFor(m => m.Country)</span>
+                                </li>
+                                <li class="list-group-item">
+                                    E-posta:
+                                    <span class="float-right">@Html.DisplayFor(m => m.Email)</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Telefon:
+                                    <span class="float-right">@Html.DisplayFor(m => m.Phone)</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Web-Site:
+                                    <span class="float-right">@Html.DisplayFor(m => m.Website)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="float-right mt-2">
+        <button class="btn btn-outline-primary" type="submit"> Silin </button>
+    </div>
+    <div class="float-right mt-2">
+        <a class="btn btn-outline-success" href="@Url.Action("Index", "Company")"> Geri </a>
+    </div>
+}

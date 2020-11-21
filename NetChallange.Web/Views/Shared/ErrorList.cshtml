@@ -1,0 +1,6 @@
+﻿@model string
+<div class="alert alert-warning alert-dismissible" role="alert">
+    <div class="alert-heading">
+        <i class="far fa-fw fa-bell"></i>@(!string.IsNullOrEmpty(Model) ? Model : "Kayıt Bulunamadı")
+    </div>
+</div>

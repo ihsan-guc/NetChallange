@@ -1,0 +1,52 @@
+﻿@model NetChallange.Data.Domain.Entities.Contact
+<div class="row">
+    <div class="col-md-12">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div style="width:100%; text-align:center">
+                            <img src="@Model.Image" class="img-thumbnail" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Şirket Adı:
+                                <span class="float-right">@Html.DisplayFor(m => m.Company.Name)</span>
+                            </li>
+                            <li class="list-group-item">
+                                Ad:
+                                <span class="float-right">@Html.DisplayFor(m => m.FirstName)</span>
+                            </li>
+                            <li class="list-group-item">
+                                Soyadı:
+                                <span class="float-right">@Html.DisplayFor(m => m.LastName)</span>
+                            </li>
+                            <li class="list-group-item">
+                                E-posta:
+                                <span class="float-right">@Html.DisplayFor(m => m.Email)</span>
+                            </li>
+                            <li class="list-group-item">
+                                Telefon:
+                                <span class="float-right">@Html.DisplayFor(m => m.Phone)</span>
+                            </li>
+                            <li class="list-group-item">
+                                Web-Site:
+                                <span class="float-right">@Html.DisplayFor(m => m.Website)</span>
+                            </li>
+                            <li class="list-group-item">
+                                Cinsiyet:
+                                <span class="float-right">@Html.DisplayFor(m => m.Gender)</span>
+                            </li>
+                            <li class="list-group-item">
+                                Doğum Tarihi:
+                                <span class="float-right">@Html.DisplayFor(m => m.Birthday)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

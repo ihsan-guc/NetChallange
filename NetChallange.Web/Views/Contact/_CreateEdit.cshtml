@@ -1,0 +1,67 @@
+﻿@model NetChallange.Web.Models.ContactViewModel.ContactCEViewModel
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="tab-content">
+                    <div class="tab-pane active show" id="tab-price">
+                        <div class="form-row">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="col-md-6">
+                                @Html.Label("Ad")
+                                @Html.TextBoxFor(m => m.FirstName, new { placeholder = "Ad", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="FirstName" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                @Html.Label("Soyadı")
+                                @Html.TextBoxFor(m => m.LastName, new { placeholder = "Soyadı", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="LastName" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                @Html.Label("E-Posta")
+                                @Html.TextBoxFor(m => m.Email, new { placeholder = "E-posta", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                @Html.Label("Cinsiyet")
+                                @Html.TextBoxFor(m => m.Gender, new { placeholder = "Cinsiyet", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="Gender" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                @Html.Label("Telefon No")
+                                @Html.TextBoxFor(m => m.Phone, new { placeholder = "Telefon No", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                @Html.Label("Image Url")
+                                @Html.TextBoxFor(m => m.Image, new { placeholder = "Image Url", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="Image" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                @Html.Label("Web-Site Url")
+                                @Html.TextBoxFor(m => m.Website, new { placeholder = "Web-Site Url", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="Website" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="">Adres Seçin</label>
+                                @Html.DropDownListFor(m => m.AddressId, Model.Addresses, "Adres Seçin", new { @class = "form-control select2" })
+                                <span asp-validation-for="Addresses" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                @Html.Label("Doğum Tarihi")
+                                @Html.TextBoxFor(m => m.Birthday, new { placeholder = "Doğum Tarihi", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="Birthday" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="float-right mt-2">
+            <button class="btn btn-primary">Kaydet</button>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

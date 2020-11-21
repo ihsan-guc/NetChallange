@@ -1,0 +1,16 @@
+﻿@model NetChallange.Web.Models.CompanyViewModel.CompanyCEViewModel
+
+@{
+    ViewBag.Title = "Şirket Ekle";
+}
+
+@using (Html.BeginForm("CreateConfirmed", "Company", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @await Html.PartialAsync("_CreateEdit")
+    </div>
+}
+

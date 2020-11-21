@@ -1,0 +1,12 @@
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.DAL\bin\Debug\netcoreapp3.1\NetChallange.DAL.deps.json
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.DAL\bin\Debug\netcoreapp3.1\NetChallange.DAL.dll
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.DAL\obj\Debug\netcoreapp3.1\NetChallange.DAL.csprojAssemblyReference.cache
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.DAL\obj\Debug\netcoreapp3.1\NetChallange.DAL.AssemblyInfoInputs.cache
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.DAL\obj\Debug\netcoreapp3.1\NetChallange.DAL.AssemblyInfo.cs
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.DAL\bin\Debug\netcoreapp3.1\NetChallange.DAL.pdb
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.DAL\bin\Debug\netcoreapp3.1\NetChallange.Data.Domain.dll
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.DAL\bin\Debug\netcoreapp3.1\NetChallange.Data.Domain.pdb
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.DAL\obj\Debug\netcoreapp3.1\NetChallange.DAL.csproj.CoreCompileInputs.cache
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.DAL\obj\Debug\netcoreapp3.1\NetChallange.DAL.csproj.CopyComplete
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.DAL\obj\Debug\netcoreapp3.1\NetChallange.DAL.dll
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.DAL\obj\Debug\netcoreapp3.1\NetChallange.DAL.pdb

@@ -1,0 +1,16 @@
+﻿@model NetChallange.Web.Models.ContactViewModel.ContactCEViewModel
+
+@{
+    ViewBag.Title = "İletişim Ekle";
+}
+
+@using (Html.BeginForm("CreateConfirmed", "Contact", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @await Html.PartialAsync("_CreateEdit")
+    </div>
+}
+

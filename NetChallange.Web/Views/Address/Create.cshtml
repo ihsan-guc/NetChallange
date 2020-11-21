@@ -1,0 +1,16 @@
+﻿@model NetChallange.Web.Models.AddressViewModel.AddressCEViewModel
+
+@{
+    ViewBag.Title = "Address Ekle";
+}
+
+@using (Html.BeginForm("CreateConfirmed", "Address", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @await Html.PartialAsync("_CreateEdit")
+    </div>
+}
+

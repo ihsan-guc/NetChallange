@@ -1,0 +1,9 @@
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.Data.Domain\bin\Debug\netcoreapp3.1\NetChallange.Data.Domain.deps.json
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.Data.Domain\bin\Debug\netcoreapp3.1\NetChallange.Data.Domain.dll
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.Data.Domain\bin\Debug\netcoreapp3.1\NetChallange.Data.Domain.pdb
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.Data.Domain\obj\Debug\netcoreapp3.1\NetChallange.Data.Domain.csprojAssemblyReference.cache
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.Data.Domain\obj\Debug\netcoreapp3.1\NetChallange.Data.Domain.AssemblyInfoInputs.cache
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.Data.Domain\obj\Debug\netcoreapp3.1\NetChallange.Data.Domain.AssemblyInfo.cs
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.Data.Domain\obj\Debug\netcoreapp3.1\NetChallange.Data.Domain.csproj.CoreCompileInputs.cache
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.Data.Domain\obj\Debug\netcoreapp3.1\NetChallange.Data.Domain.dll
+C:\Users\EysanGuc\source\repos\NetChallange\NetChallange.Data.Domain\obj\Debug\netcoreapp3.1\NetChallange.Data.Domain.pdb

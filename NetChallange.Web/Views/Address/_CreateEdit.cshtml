@@ -1,0 +1,67 @@
+﻿@model NetChallange.Web.Models.AddressViewModel.AddressCEViewModel
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="tab-content">
+                    <div class="tab-pane active show" id="tab-price">
+                        <div class="form-row">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="col-md-6">
+                                @Html.Label("Ülke")
+                                @Html.TextBoxFor(m => m.Country, new { placeholder = "Ülke", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="Country" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                @Html.Label("Şehir")
+                                @Html.TextBoxFor(m => m.City, new { placeholder = "Şehir", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="City" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                @Html.Label("Sokak")
+                                @Html.TextBoxFor(m => m.Street, new { placeholder = "Sokak", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="Street" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                @Html.Label("Sokak Adı")
+                                @Html.TextBoxFor(m => m.StreetName, new { placeholder = "Sokak Adı", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="StreetName" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                @Html.Label("Bina Numarası")
+                                @Html.TextBoxFor(m => m.BuildingNumber, new { placeholder = "Bina Numarası", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="BuildingNumber" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                @Html.Label("Posta Kodu")
+                                @Html.TextBoxFor(m => m.Zipcode, new { placeholder = "Posta Kodu", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="Zipcode" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                @Html.Label("Ülke Kodu")
+                                @Html.TextBoxFor(m => m.CountyCode, new { placeholder = "Ülke Kodu", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="CountyCode" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-3">
+                                @Html.Label("Enlem")
+                                @Html.TextBoxFor(m => m.Latitude, new { placeholder = "Enlem", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="Latitude" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-3">
+                                @Html.Label("Boylam")
+                                @Html.TextBoxFor(m => m.Longitude, new { placeholder = "Boylam", @class = "form-control mb-2 mr-sm-2" })
+                                <span asp-validation-for="Longitude" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="float-right mt-2">
+            <button class="btn btn-primary">Kaydet</button>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

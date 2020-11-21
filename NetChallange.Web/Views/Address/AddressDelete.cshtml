@@ -1,0 +1,80 @@
+﻿@model NetChallange.Data.Domain.Entities.Address
+@using (Html.BeginForm("DeleteConfirmed", "Address", FormMethod.Post))
+{
+
+    @Html.HiddenFor(p => p.Id)
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                @if (Model.Company != null)
+                                {
+                                    <li class="list-group-item">
+                                        Şirket Adı:
+                                        <span class="float-right">@Html.DisplayFor(m => m.Company.Name)</span>
+                                    </li>
+                                }
+                                @if (Model.Contact != null)
+                                {
+                                    <li class="list-group-item">
+                                        Kişinin Adı:
+                                        <span class="float-right">@Html.DisplayFor(m => m.Contact.FirstName)</span>
+                                    </li>
+                                }
+                                <li class="list-group-item">
+                                    Ülke:
+                                    <span class="float-right">@Html.DisplayFor(m => m.Country)</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Şehir:
+                                    <span class="float-right">@Html.DisplayFor(m => m.City)</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Sokak:
+                                    <span class="float-right">@Html.DisplayFor(m => m.Street)</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Sokak Adı:
+                                    <span class="float-right">@Html.DisplayFor(m => m.StreetName)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    Bina Numarası:
+                                    <span class="float-right">@Html.DisplayFor(m => m.BuildingNumber)</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Posta Kodu:
+                                    <span class="float-right">@Html.DisplayFor(m => m.Zipcode)</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Ülke Kodu:
+                                    <span class="float-right">@Html.DisplayFor(m => m.CountyCode)</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Enlem:
+                                    <span class="float-right">@Html.DisplayFor(m => m.Latitude)</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Boylam:
+                                    <span class="float-right">@Html.DisplayFor(m => m.Longitude)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="float-right mt-2">
+        <button class="btn btn-outline-primary" type="submit"> Silin </button>
+    </div>
+    <div class="float-right mt-2">
+        <a class="btn btn-outline-success" href="@Url.Action("Index", "Contact")"> Geri </a>
+    </div>
+}
